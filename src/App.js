@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import BottomBar from './Components/BottomBar/BottomBar';
+import FirstComponent from './Components/FirstComponent/FirstComponent';
+import SecondComponent from './Components/SecondComponent/SecondComponent';
+import SideBar from './Components/SideBar/SideBar';
+import ThirdComponent from './Components/ThirdComponent/ThirdComponent';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='sideBar'><SideBar /></div>
+      <div className='notificationIcon'><NotificationsNoneOutlinedIcon/></div>
+      <div className='firstComponent'><FirstComponent /></div>
+      <div className='secondComponent'><SecondComponent /></div>
+      <div className='thirdComponent'><ThirdComponent /></div>
     </div>
+    <div className='bottomBar'><BottomBar/></div>
+    </>
   );
 }
 
