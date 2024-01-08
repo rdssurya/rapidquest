@@ -34,7 +34,7 @@ const ThirdComponent = () => {
     <div style={{color: 'gray'}} className={styles.boxStyle}>
         <div>Are you considering a <span style={{fontWeight:'bold', color:'black'}}>Housing Advance?</span></div>
         <div>Limited time reduced interest.</div>
-        <Button href="#text-buttons" style={{fontWeight:'bold'}} className={styles.handlingMobileView}>{`Learn More ${'>'}`}</Button>
+        <Button href="#text-buttons" style={{fontWeight:'bold'}}>{`Learn More ${'>'}`}</Button>
     </div>
     </div>
   );
